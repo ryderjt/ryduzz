@@ -393,6 +393,23 @@
         border: 0;
       }
 
+      .portfolio-stack {
+        display: grid;
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      .portfolio-card-title {
+        margin: 0 0 12px;
+        font-size: 22px;
+      }
+
+      .portfolio-card-copy {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
       /* Carousel (center card with blurred side cards behind) */
       .carousel {
         position: relative;
@@ -682,15 +699,33 @@
             </div>
           </div>
 
-          <div class="card reveal" style="margin-top: 18px" aria-label="Featured video">
-            <div class="embed">
-              <iframe
-                src="https://www.youtube.com/embed/hz4sMfnhx5g?rel=0&modestbranding=1&playsinline=1"
-                title="Featured portfolio video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
+          <div class="portfolio-stack">
+            <div class="card reveal" aria-label="Photography portfolio section">
+              <h3 class="portfolio-card-title">1. Photography</h3>
+              <p class="portfolio-card-copy">
+                Browse my photography work in the full portfolio collection.
+              </p>
+            </div>
+
+            <div class="card reveal" aria-label="Cinematography portfolio section">
+              <h3 class="portfolio-card-title">2. Cinematography</h3>
+              <div class="embed">
+                <iframe
+                  src="https://www.youtube.com/embed/hz4sMfnhx5g?rel=0&modestbranding=1&playsinline=1"
+                  title="Cinematography featured video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="card reveal" aria-label="Graphic design portfolio section">
+              <h3 class="portfolio-card-title">3. Graphic Design</h3>
+              <p class="portfolio-card-copy">
+                Check out my Graphic Design folder for branding, layout, and
+                visual design pieces.
+              </p>
             </div>
           </div>
           <div class="reveal" style="margin-top: 18px; text-align: center">
